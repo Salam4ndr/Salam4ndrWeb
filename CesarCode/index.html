@@ -1,0 +1,161 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher - Blog</title>
+    <style>
+      /* Reset margins and padding */
+      body, h1, h2, p, a {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+      }
+
+      /* Page background */
+      body {
+        background-color: black;
+        color: orange;
+        padding: 20px;
+      }
+
+      /* Main content layout */
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Blog header style */
+      header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      header img {
+        width: 80%;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        border: 6px solid orange;
+      }
+
+      header h1 {
+        font-size: 3em;
+        color: orange;
+        margin-top: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      /* Blog article */
+      .article {
+        background-color: black;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .article h2 {
+        font-size: 2.5em;
+        color: orange;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .article p {
+        line-height: 1.6;
+        font-size: 1.1em;
+        margin-bottom: 20px;
+        color: orange;
+      }
+
+      /* Link style */
+      .cta-links a {
+        text-decoration: none;
+        background-color: orange;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 0 15px;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease;
+      }
+
+      /* Hover effect on links */
+      .cta-links a:hover {
+        background-color: grey;
+      }
+
+      /* Laboratory */
+      .laboratory-section {
+        text-align: center;
+        margin-top: 50px;
+        padding: 30px;
+        background-color: black;
+        border-radius: 10px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .laboratory-section h2 {
+        font-size: 2em;
+        color: orange;
+        margin-bottom: 20px;
+      }
+
+      .laboratory-button {
+        text-decoration: none;
+        background-color: orange;
+        color: black;
+        padding: 15px 30px;
+        font-size: 1.5em;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        display: inline-block;
+        margin-top: 10px;
+      }
+
+      .laboratory-button:hover {
+        background-color: grey;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        margin-top: 50px;
+        color: orange;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp0J1mBz181Ci872bAgZ1yAKJ_h5DMTXAbEA&s" alt="Caesar Cipher Image">
+        <h1>Caesar Cipher - Blog</h1>
+      </header>
+
+      <div class="article">
+        <h2>How Does the Caesar Cipher Work?</h2>
+        <p>
+          The Caesar Cipher is one of the oldest encryption methods. It is named after Julius Caesar, who used it to securely communicate with his generals. It is a substitution cipher, which means that each letter in the message is replaced with another letter a certain number of positions forward in the alphabet.
+        </p>
+        <p>
+          For example, if the chosen shift number is 3, the letter "A" becomes "D", "B" becomes "E", "C" becomes "F", and so on. When reaching the end of the alphabet, it wraps around back to "A". This method is very simple, but in the past, it was useful for encrypting messages quickly and practically.
+        </p>
+        <p>
+          However, its security is very low. With just a frequency analysis, it is easy to determine the shift number and decrypt the message. Despite this, the Caesar Cipher is still used today as an introduction to encryption concepts in cryptography courses.
+        </p>
+      </div>
+
+      <!-- Laboratory Section -->
+      <div class="laboratory-section">
+        <h2>LABORATORY</h2>
+        <a href="lettura.html" class="laboratory-button">LET'S GO TO THE ENCRYPTION AND DECRYPTION LAB</a>
+      </div>
+
+      <footer>
+        <p>&copy; 2025 Caesar Cipher Blog. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
