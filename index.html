@@ -4,14 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cristian Chiarilli | Cybersecurity</title>
+
+  <!-- Forza dark mode su TUTTI i dispositivi -->
   <script>
-  tailwind.config = {
-    darkMode: 'class'
-  }
-</script>
+    tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stili personalizzati -->
   <style>
+    html {
+      background-color: #111827; /* sfondo dark se JS fallisce */
+    }
     body {
       font-family: "Inter", sans-serif;
       scroll-behavior: smooth;
