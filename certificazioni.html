@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="it" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificazioni | Cristian Chiarilli</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+    .cert-card {
+      transition: all 0.2s ease;
+      border-left: 4px solid transparent;
+    }
+    .cert-card:hover {
+      border-left-color: #3b82f6;
+      transform: translateX(4px);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+  <!-- HEADER -->
+  <header class="py-6 px-6 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-semibold">Certificazioni</h1>
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">
+          Torna alla Home
+        </a>
+        <button onclick="toggleLang()" id="langBtn" class="px-3 py-1 text-sm rounded-md bg-gray-100 dark:bg-gray-800">
+          EN
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="max-w-4xl mx-auto px-6 py-12">
+    <div class="text-center">
+      <h2 id="cert-title" class="text-3xl font-bold mb-4">Le mie certificazioni</h2>
+      <p id="cert-desc" class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        Documentazione delle competenze acquisite in cybersecurity, reti, sistemi, lingua inglese e competenze digitali.
+      </p>
+    </div>
+  </section>
+
+  <!-- CYBERSECURITY -->
+  <section class="max-w-5xl mx-auto px-6 pb-12" id="cybersecurity">
+    <h3 id="cyber-title" class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200 dark:border-gray-800">Cybersecurity</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/Cybersecurity-introduction-certificate-Cisco.jpg" alt="Intro to Cybersecurity" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">Introduction to Cybersecurity</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Cisco Networking Academy</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-1-desc">Concetti di base sulla sicurezza informatica, minacce e difese personali.</p>
+        <a href="Certificati/Cybersecurity-introduction-certificate-Cisco.jpg" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/Complete Beginner.png" alt="Intro to Cybersecurity" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">Complete Beginner</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">TryHackMe</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-2-desc">Concetti di sicurezza informatica, con un focus su minacce comuni, tipologie di attacchi e strategie di difesa personale.</p>
+        <a href="Certificati/Complete Beginner.png" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/CompTIA Pentest+.png" alt="Google Cybersecurity" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">CompTIA pentest+</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">TryHackMe</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-3-desc">Certificazione sull'esecuzione di test di penetrazione e valutazioni delle vulnerabilità in ambienti aziendali.</p>
+        <a href="Certificati/CompTIA Pentest+.png" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/Cyber Defense.png" alt="Google Cybersecurity" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">Cyber Defense</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">TryHackMe</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-4-desc">Competenze nella protezione attiva dei sistemi informatici da minacce, attacchi e intrusioni attraverso monitoraggio.</p>
+        <a href="Certificati/Cyber Defense.png" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/introduction to cyber security.png" alt="Google Cybersecurity" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">Introduction to Cybersecurity</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">TryHackMe</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-5-desc">Concetti di base sulla sicurezza informatica, minacce e difese personali.</p>
+        <a href="Certificati/introduction to cyber security.png" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/junior penetration tester.png" alt="Google Cybersecurity" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">Junior Penetration tester</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">TryHackMe</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-6-desc">Competenze fondamentali per identificare, analizzare e sfruttare vulnerabilità in ambienti controllati.</p>
+        <a href="Certificati/junior penetration tester.png" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/pre security.png" alt="Google Cybersecurity" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">Pre-Security</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">TryHackMe</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-7-desc">Introduzione ai concetti della sicurezza informatica, networking e strumenti per iniziare un percorso nella cybersecurity.</p>
+        <a href="Certificati/pre security.png" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INFORMATICA GENERALE -->
+  <section class="max-w-5xl mx-auto px-6 pb-16" id="general-it">
+    <h3 id="general-title" class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200 dark:border-gray-800">Informatica Generale</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/IoT-certificate-Cisco.jpg" alt="ICDL" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">IoT Certificate</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Cisco Networking Academy</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-8-desc">Panoramica sui dispositivi IoT, loro funzionamento e implicazioni in ambito smart home, industria e sicurezza.</p>
+        <a href="Certificati/IoT-certificate-Cisco.jpg" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/Get-Connected-Cisco.jpg" alt="Google Cybersecurity" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">Get Connected</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Cisco Networking Academy</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-9-desc">Introduzione all'uso di dispositivi digitali, internet, competenze base di rete e comunicazione online.</p>
+        <a href="Certificati/Get-Connected-Cisco.jpg" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/Linux-essenzial-certificate-Cisco.jpg" alt="Google Cybersecurity" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">Linux essenzial</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Cisco Networking Academy</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-10-desc">Introduzione all'uso di dispositivi digitali, internet, competenze base di rete e comunicazione online.</p>
+        <a href="Certificati/Linux-essenzial-certificate-Cisco.jpg" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/web foundamentals.png" alt="Google Cybersecurity" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">Web Foundamentals</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">TryHackMe</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-11-desc">Conoscenze fondamentali sul funzionamento del web, inclusi protocolli, richieste HTTP, browser e architettura client-server.</p>
+        <a href="Certificati/web foundamentals.png" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="https://ing.uniroma2.it/wp-content/uploads/2022/05/logo-tor-vergata-university-768x768.png" alt="Google Cybersecurity" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1"  id="cert-12-titl">Programmazione per l'analisi dei dati</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3" >TorVergata</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-12-desc">Corso sull’analisi dei dati con Python, utilizzando librerie come Pandas e Matplotlib.</p>
+        <a href="Certificati/TorVergataAnalisiDati.pdf" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- LINGUA INGLESE -->
+  <section class="max-w-5xl mx-auto px-6 pb-12" id="english">
+    <h3 id="english-title" class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200 dark:border-gray-800">Lingua Inglese</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/Inglese-cisco.jpg" alt="English B1" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">English Certification</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Cisco Networking Academy</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-13-desc">Certificazione linguistica che attesta la capacità di comprensione, lettura, scrittura e conversazione in inglese</p>
+        <a href="Certificati/Inglese-cisco.jpg" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+      
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/certificato inglese A2.jpeg" alt="English B1" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">English Certification A2</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Accademia Britannica</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-14-desc">Certificazione linguistica di livello A2 che attesta competenze basilari nella comprensione, lettura e conversazione in inglese in contesti quotidiani.</p>
+        <a href="Certificati/certificato inglese A2.jpeg" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/Certificato-Inglese-C1.jpg" alt="English B1" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">English Certification C1</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Accademia Britannica</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-15-desc">Certificazione avanzata di lingua inglese che dimostra un'elevata padronanza nella comprensione, espressione scritta e orale, utile in contesti accademici e professionali.</p>
+        <a href="Certificati/Certificato-Inglese-C1.jpg" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/CertificatoIngleseDublino.jpg" alt="English B1" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1">English Certification</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">ISI Dublin</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-16-desc">Certificazione linguistica che attesta la capacità di comprensione, lettura, scrittura e conversazione in inglese.</p>
+        <a href="Certificati/CertificatoIngleseDublino.jpg" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+    </div>
+  </section>
+
+   <!-- AlTRO -->
+  <section class="max-w-5xl mx-auto px-6 pb-12" id="english">
+    <h3 id="english-title" class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200 dark:border-gray-800">Altro</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/CRI.jpg" alt="English B1" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1" id="cert-17-titl">Corso di primo soccorso</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Croce Rossa Italiana</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-17-desc">Formazione sulle manovre di primo intervento in situazioni di emergenza, come rianimazione (RCP) e gestione delle ferite.</p>
+        <a href="Certificati/CRI.jpg" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+
+      <div class="cert-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+        <img src="Certificati/Abilità-Tecnica-Armi-a-fuoco.jpg" alt="English B1" class="rounded mb-4 w-full object-cover h-40">
+        <h4 class="text-xl font-semibold mb-1"  id="cert-18-titl">Abilità Tecnica armi a fuoco</h4>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Tiro a segno nazionale</p>
+        <p class="text-sm text-gray-600 dark:text-gray-300 mb-4" id="cert-18-desc">Formazione tecnica sull’uso e la sicurezza di armi da fuoco: pistola semiautomatica, revolver e carabina.</p>
+        <a href="Certificati/Abilità-Tecnica-Armi-a-fuoco.jpg" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">Visualizza certificato</a>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-8 text-center text-sm text-gray-500 dark:text-gray-400">
+    <div class="max-w-6xl mx-auto px-6">
+      <p>&copy; 2025 Cristian Chiarilli. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script>
+    let lang = 'it';
+    const langBtn = document.getElementById("langBtn");
+
+    const t = {
+      en: {
+        'cert-title': 'My Certifications',
+        'cert-desc': 'Documentation of acquired skills in cybersecurity, networks, systems, English language and digital competencies.',
+        'cyber-title': 'Cybersecurity',
+        'english-title': 'English Language',
+        'general-title': 'General IT',
+        'altro-title': 'Other',
+        'cert-1-desc': 'Basic concepts of cybersecurity, personal threats and defenses.',
+        'cert-2-desc': 'Cybersecurity concepts focusing on common threats, attack types, and personal defense strategies.',
+        'cert-3-desc': 'Penetration testing and vulnerability assessment in corporate environments.',
+        'cert-4-desc': 'Active protection of computer systems from threats, attacks, and intrusions via monitoring.',
+        'cert-5-desc': 'Introduction to cybersecurity, threats, and personal protections.',
+        'cert-6-desc': 'Fundamental skills for identifying, analyzing, and exploiting vulnerabilities in controlled environments.',
+        'cert-7-desc': 'Introduction to cybersecurity concepts, networking, and basic tools to start in cybersecurity.',
+        'cert-8-desc': 'Overview of IoT devices, their functioning, and their implications in smart homes, industry, and security.',
+        'cert-9-desc': 'Introduction to using digital devices, internet, basic network knowledge, and online communication.',
+        'cert-10-desc': 'Introduction to Linux operating system and basic terminal commands.',
+        'cert-11-desc': 'Web fundamentals including protocols, HTTP requests, browsers, and client-server architecture.',
+        'cert-12-desc': 'Data analysis course using Python with libraries like Pandas and Matplotlib.',
+        'cert-13-desc': 'Language certification that demonstrates comprehension, reading, writing, and speaking skills in English.',
+        'cert-14-desc': 'A2-level English certification for basic everyday communication skills.',
+        'cert-15-desc': 'Advanced English certification demonstrating high proficiency in written and spoken expression.',
+        'cert-16-desc': 'Language certification obtained abroad validating comprehensive English skills.',
+        'cert-17-desc': 'Training in emergency first-aid techniques such as CPR and wound management.',
+        'cert-18-desc': 'Technical training on safe handling and use of firearms: semi-auto pistols, revolvers, rifles.',
+        'cert-12-titl': 'Programming for data analysis',
+        'cert-17-titl': 'First aid course',
+        'cert-18-titl': 'Technical Skill Firearms'
+      },
+      it: {
+    'cert-title': 'Le mie certificazioni',
+    'cert-desc': 'Documentazione delle competenze acquisite in cybersecurity, reti, sistemi, lingua inglese e competenze digitali.',
+    'cyber-title': 'Cybersecurity',
+    'english-title': 'Lingua Inglese',
+    'general-title': 'Informatica Generale',
+    'altro-title': 'Altro',
+    'cert-1-desc': 'Concetti di base sulla sicurezza informatica, minacce e difese personali.',
+    'cert-2-desc': 'Concetti di sicurezza informatica, con un focus su minacce comuni, tipologie di attacchi e strategie di difesa personale.',
+    'cert-3-desc': 'Certificazione sull\'esecuzione di test di penetrazione e valutazioni delle vulnerabilità in ambienti aziendali.',
+    'cert-4-desc': 'Competenze nella protezione attiva dei sistemi informatici da minacce, attacchi e intrusioni attraverso monitoraggio.',
+    'cert-5-desc': 'Concetti di base sulla sicurezza informatica, minacce e difese personali.',
+    'cert-6-desc': 'Competenze fondamentali per identificare, analizzare e sfruttare vulnerabilità in ambienti controllati.',
+    'cert-7-desc': 'Introduzione ai concetti della sicurezza informatica, networking e strumenti per iniziare un percorso nella cybersecurity.',
+    'cert-8-desc': 'Panoramica sui dispositivi IoT, loro funzionamento e implicazioni in ambito smart home, industria e sicurezza.',
+    'cert-9-desc': 'Introduzione all\'uso di dispositivi digitali, internet, competenze base di rete e comunicazione online.',
+    'cert-10-desc': 'Introduzione al sistema operativo Linux e ai comandi base da terminale.',
+    'cert-11-desc': 'Conoscenze fondamentali sul funzionamento del web, inclusi protocolli, richieste HTTP, browser e architettura client-server.',
+    'cert-12-desc': 'Corso sull’analisi dei dati con Python, utilizzando librerie come Pandas e Matplotlib.',
+    'cert-13-desc': 'Certificazione linguistica che attesta la capacità di comprensione, lettura, scrittura e conversazione in inglese.',
+    'cert-14-desc': 'Certificazione linguistica di livello A2 che attesta competenze basilari nella comprensione, lettura e conversazione in inglese in contesti quotidiani.',
+    'cert-15-desc': 'Certificazione avanzata di lingua inglese che dimostra un\'elevata padronanza nella comprensione, espressione scritta e orale, utile in contesti accademici e professionali.',
+    'cert-16-desc': 'Certificazione linguistica che attesta la capacità di comprensione, lettura, scrittura e conversazione in inglese.',
+    'cert-17-desc': 'Formazione sulle manovre di primo intervento in situazioni di emergenza, come rianimazione (RCP) e gestione delle ferite.',
+    'cert-18-desc': 'Formazione sulle manovre di primo intervento in situazioni di emergenza, come rianimazione (RCP) e gestione delle ferite.',
+    'cert-19-desc': 'Formazione tecnica sull’uso e la sicurezza di armi da fuoco: pistola semiautomatica, revolver e carabina.',
+    'cert-12-titl': "Programmazione per l'analisi dei dati",
+    'cert-17-titl': 'Corso di primo soccorso',
+    'cert-18-titl': 'Abilità Tecnica armi a fuoco'
+    }
+    };
+
+    function toggleLang() {
+      lang = lang === 'it' ? 'en' : 'it';
+      langBtn.textContent = lang === 'it' ? 'EN' : 'IT';
+      for (const id in t[lang]) {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = t[lang][id];
+      }
+    }
+  </script>
+</body>
+</html>
+
+
