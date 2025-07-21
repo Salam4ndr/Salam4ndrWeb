@@ -1,8 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="it" class="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111827" />
+
   <title>Cristian Chiarilli | Cybersecurity</title>
 
   <!-- Forza dark mode su TUTTI i dispositivi -->
@@ -10,6 +13,8 @@
     tailwind.config = {
       darkMode: 'class'
     };
+
+    document.documentElement.classList.add('dark');
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -25,6 +30,7 @@
       font-family: "Inter", sans-serif;
       scroll-behavior: smooth;
       background-color: #111827;
+      
     }
     .text-gradient {
       background-clip: text;
