@@ -1,4 +1,4 @@
-<!--1.8-->
+<!--1.9-->
 <!DOCTYPE html>
 <html lang="it" class="dark"  style="background-color: #111827;">
 <head>
@@ -104,106 +104,79 @@
     </div>
   </section>
 
-  <!-- CYBER LAB -->
-  <section id="lab" class="py-16 px-6 bg-gray-50 dark:bg-gray-800">
-    <div class="max-w-6xl mx-auto">
-      <h2 id="lab-title" class="text-2xl font-bold mb-8 text-center">Cyber Social</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm card-hover">
-          <h3 id="thm-title" class="text-xl font-semibold mb-3">TryHackMe</h3>
-          <p id="thm-desc" class="text-gray-600 dark:text-gray-300 mb-4">
-            Stanze completate su Linux, reti, privilege escalation e OWASP Top 10.
-          </p>
-          <a href="https://tryhackme.com/p/Salam4ndr" target="_blank" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-            Vedi profilo
-          </a>
-        </div>
-        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm card-hover">
-          <h3 id="htb-title" class="text-xl font-semibold mb-3">Hack The Box</h3>
-          <p id="htb-desc" class="text-gray-600 dark:text-gray-300 mb-4">
-            Challenge su macchine reali per testare vulnerabilità in ambienti sicuri.
-          </p>
-          <a href="https://ctf.hackthebox.com/user/profile/414889" target="_blank" class="inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-            Vedi profilo
-          </a>
-        </div>
+<!-- CYBER LAB -->
+<section id="lab">
+  <div class="container">
+    <h2 id="lab-title">Cyber Social</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3 id="thm-title">TryHackMe</h3>
+        <p id="thm-desc">Stanze completate su Linux, reti, privilege escalation e OWASP Top 10.</p>
+        <a href="https://tryhackme.com/p/Salam4ndr" target="_blank">Vedi profilo</a>
+      </div>
+      <div class="card">
+        <h3 id="htb-title">Hack The Box</h3>
+        <p id="htb-desc">Challenge su macchine reali per testare vulnerabilità in ambienti sicuri.</p>
+        <a href="https://ctf.hackthebox.com/user/profile/414889" target="_blank">Vedi profilo</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PROGETTI -->
-  <section id="projects" class="py-16 px-6">
-    <div class="max-w-6xl mx-auto">
-      <h2 id="projects-title" class="text-2xl font-bold mb-8 text-center">Progetti</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm card-hover">
-          <h3 id="proj1-title" class="text-xl font-semibold mb-3">Analisi cancro al seno</h3>
-          <p id="proj1-desc" class="text-gray-600 dark:text-gray-300 mb-4">
-            Progetto sviluppato con l'Università di Tor Vergata per l'analisi predittiva.
-          </p>
-          <a href="https://github.com/Salam4ndr/Breast-Cancer-prevention" target="_blank" class="inline-block px-4 py-2 bg-gray-200 dark:bg-gray-600 rounded-md hover:bg-gray-300 dark:hover:bg-gray-500 transition">
-            Vedi su GitHub
-          </a>
-        </div>
-        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm card-hover">
-          <h3 id="proj2-title" class="text-xl font-semibold mb-3">SQL Injection Tool</h3>
-          <p id="proj2-desc" class="text-gray-600 dark:text-gray-300 mb-4">
-            Strumento per il testing di vulnerabilità SQL injection in banda.
-          </p>
-          <a href="https://github.com/Salam4ndr/SalamanderSQLI" target="_blank" class="inline-block px-4 py-2 bg-gray-200 dark:bg-gray-600 rounded-md hover:bg-gray-300 dark:hover:bg-gray-500 transition">
-            Vedi su GitHub
-          </a>
-        </div>
-        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm card-hover">
-          <h3 id="proj3-title" class="text-xl font-semibold mb-3">URL Fuzzing Tool</h3>
-          <p id="proj3-desc" class="text-gray-600 dark:text-gray-300 mb-4">
-            Tool per la scoperta di risorse nascoste su web server.
-          </p>
-          <a href="https://github.com/Salam4ndr/SalaSerch" target="_blank" class="inline-block px-4 py-2 bg-gray-200 dark:bg-gray-600 rounded-md hover:bg-gray-300 dark:hover:bg-gray-500 transition">
-            Vedi su GitHub
-          </a>
-        </div>
-        <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm card-hover">
-          <h3 id="proj4-title" class="text-xl font-semibold mb-3">Laboratorio SQL Injection</h3>
-          <p id="proj4-desc" class="text-gray-600 dark:text-gray-300 mb-4">
-            Ambiente per l'apprendimento delle tecniche di SQL injection.
-          </p>
-          <a href="https://github.com/Salam4ndr/SalaSerch" target="_blank" class="inline-block px-4 py-2 bg-gray-200 dark:bg-gray-600 rounded-md hover:bg-gray-300 dark:hover:bg-gray-500 transition">
-            Vedi su GitHub
-          </a>
-        </div>
+<!-- PROGETTI -->
+<section id="projects">
+  <div class="container">
+    <h2 id="projects-title">Progetti</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3 id="proj1-title">Analisi cancro al seno</h3>
+        <p id="proj1-desc">Progetto sviluppato con l'Università di Tor Vergata per l'analisi predittiva.</p>
+        <a href="https://github.com/Salam4ndr/Breast-Cancer-prevention" target="_blank">Vedi su GitHub</a>
+      </div>
+      <div class="card">
+        <h3 id="proj2-title">SQL Injection Tool</h3>
+        <p id="proj2-desc">Strumento per il testing di vulnerabilità SQL injection in banda.</p>
+        <a href="https://github.com/Salam4ndr/SalamanderSQLI" target="_blank">Vedi su GitHub</a>
+      </div>
+      <div class="card">
+        <h3 id="proj3-title">URL Fuzzing Tool</h3>
+        <p id="proj3-desc">Tool per la scoperta di risorse nascoste su web server.</p>
+        <a href="https://github.com/Salam4ndr/SalaSerch" target="_blank">Vedi su GitHub</a>
+      </div>
+      <div class="card">
+        <h3 id="proj4-title">Laboratorio SQL Injection</h3>
+        <p id="proj4-desc">Ambiente per l'apprendimento delle tecniche di SQL injection.</p>
+        <a href="https://github.com/Salam4ndr/SalaSerch" target="_blank">Vedi su GitHub</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer id="contatti" class="bg-gray-50 dark:bg-gray-800 py-12 px-6 mt-auto">
-    <div class="max-w-6xl mx-auto">
-      <div class="grid md:grid-cols-2 gap-8">
-        <div>
-          <h3 class="text-lg font-semibold mb-4">Contatti</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-2">
-            Email: <a href="mailto:cristianchiarilli@gmail.com" class="text-blue-600 dark:text-blue-400">cristianchiarilli@gmail.com</a>
-          </p>
-          <p class="text-gray-600 dark:text-gray-300">
-            GitHub: <a href="https://github.com/Salam4ndr" target="_blank" class="text-blue-600 dark:text-blue-400">github.com/Salam4ndr</a>
-          </p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold mb-4">Competenze</h3>
-          <div class="flex flex-wrap gap-2">
-            <span class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-600 rounded">Cybersecurity</span>
-            <span class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-600 rounded">Penetration Testing</span>
-            <span class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-600 rounded">Python</span>
-            <span class="text-xs px-2 py-1 bg-gray-200 dark:bg-gray-600 rounded">Linux</span>
-          </div>
-        </div>
+ <!-- FOOTER -->
+<footer id="contatti">
+  <div class="container">
+    <div class="grid-2">
+      <div>
+        <h3>Contatti</h3>
+        <p>Email: <a href="mailto:cristianchiarilli@gmail.com">cristianchiarilli@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/Salam4ndr" target="_blank">github.com/Salam4ndr</a></p>
       </div>
-      <div class="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8 text-center text-gray-500 dark:text-gray-400">
-        <p>© 2025 Cristian Chiarilli. Tutti i diritti riservati.</p>
+      <div>
+        <h3>Competenze</h3>
+        <div class="skills">
+          <span>Cybersecurity</span>
+          <span>Penetration Testing</span>
+          <span>Python</span>
+          <span>Linux</span>
+        </div>
       </div>
     </div>
-  </footer>
+    <div class="divider">
+      <p>© 2025 Cristian Chiarilli. Tutti i diritti riservati.</p>
+    </div>
+  </div>
+</footer>
+
 
   <script>
     function toggleDropdown() {
