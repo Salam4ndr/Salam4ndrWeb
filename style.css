@@ -82,6 +82,23 @@ nav .dropdown-menu a:hover {
   background-color: #374151;
 }
 
+/* FORZA SCURO sul dropdown */
+#dropdown-menu,
+#dropdown-menu.bg-white,
+#dropdown-menu.bg-gray-50 {
+  background-color: #1f2937 !important;
+  color: #f3f4f6 !important;
+  border: 1px solid #374151 !important;
+}
+
+#dropdown-menu a {
+  color: #f3f4f6 !important;
+}
+
+#dropdown-menu a:hover {
+  background-color: #374151 !important;
+}
+
 /* ======= HERO SECTION ======= */
 #hero {
   display: flex;
