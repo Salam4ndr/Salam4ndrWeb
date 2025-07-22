@@ -5,7 +5,7 @@ body {
   color: #1f2937;
 }
 
-body.dark {
+html.dark body {
   background-color: #0f172a;
   color: #f1f5f9;
 }
@@ -79,7 +79,7 @@ header {
   backdrop-filter: blur(6px);
 }
 
-.dark header {
+html.dark header {
   background-color: rgba(17, 24, 39, 0.9);
   border-color: #1f2937;
 }
@@ -90,7 +90,7 @@ header h1 {
   color: #1f2937;
 }
 
-.dark header h1 {
+html.dark header h1 {
   color: #f8fafc;
 }
 
@@ -104,7 +104,7 @@ header h1 {
   color: #ffffff;
 }
 
-.dark #langBtn {
+html.dark #langBtn {
   background-color: #1f2937;
 }
 
@@ -135,7 +135,7 @@ header h1 {
   transform: translateX(4px);
 }
 
-.dark .cert-card {
+html.dark .cert-card {
   background-color: #1f2937;
 }
 
@@ -147,17 +147,17 @@ header h1 {
 .text-gray-600 { color: #4b5563; }
 .text-gray-800 { color: #1f2937; }
 
-.dark .text-gray-200 { color: #e5e7eb; }
-.dark .text-gray-300 { color: #d1d5db; }
-.dark .text-gray-400 { color: #9ca3af; }
-.dark .text-gray-500 { color: #6b7280; }
-.dark .text-gray-600 { color: #4b5563; }
+html.dark .text-gray-200 { color: #e5e7eb; }
+html.dark .text-gray-300 { color: #d1d5db; }
+html.dark .text-gray-400 { color: #9ca3af; }
+html.dark .text-gray-500 { color: #6b7280; }
+html.dark .text-gray-600 { color: #4b5563; }
 
 .text-blue-600 {
   color: #2563eb;
 }
 
-.dark .text-blue-400 {
+html.dark .text-blue-400 {
   color: #60a5fa;
 }
 
@@ -170,6 +170,7 @@ header h1 {
   border-top: 1px solid #e5e7eb;
 }
 
-.dark .border-b, .dark .border-t {
+html.dark .border-b,
+html.dark .border-t {
   border-color: #1f2937;
 }
