@@ -285,9 +285,10 @@ footer .divider {
   }
 
   .actions {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    text-align: center;
   }
 
   .hero-text h1 {

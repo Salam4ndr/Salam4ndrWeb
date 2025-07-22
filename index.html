@@ -1,4 +1,4 @@
-<!--1.9-->
+<!--1.10-->
 <!DOCTYPE html>
 <html lang="it" class="dark"  style="background-color: #111827;">
 <head>
@@ -21,32 +21,6 @@
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Stili personalizzati -->
-  <style>
-    html {
-      background-color: #111827; /* sfondo dark se JS fallisce */
-    }
-    body {
-      font-family: "Inter", sans-serif;
-      scroll-behavior: smooth;
-      background-color: #111827;
-      
-    }
-    .text-gradient {
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      background-image: linear-gradient(90deg, #3b82f6, #2563eb);
-    }
-    .card-hover {
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .card-hover:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    }
-  </style>
 </head>
 <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
 
@@ -88,14 +62,11 @@
         Appassionato di sicurezza informatica, analisi di reti e sviluppo di soluzioni sicure.
         Esplora il mio percorso nelle principali piattaforme del settore.
       </p>
-      <div class="flex gap-4">
-        <a href="#lab" class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
-          Cyber Social
-        </a>
-        <a href="#projects" class="px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 transition">
-          I miei progetti
-        </a>
-      </div>
+      <div class="actions">
+  <a href="#lab" class="primary">Cyber Social</a>
+  <a href="#projects" class="secondary">I miei progetti</a>
+</div>
+
     </div>
     <div class="md:w-1/3 flex justify-center">
       <div class="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-lg">
@@ -146,7 +117,7 @@
       <div class="card">
         <h3 id="proj4-title">Laboratorio SQL Injection</h3>
         <p id="proj4-desc">Ambiente per l'apprendimento delle tecniche di SQL injection.</p>
-        <a href="https://github.com/Salam4ndr/SalaSerch" target="_blank">Vedi su GitHub</a>
+        <a href="https://github.com/Salam4ndr/SQLI_Lab" target="_blank">Vedi su GitHub</a>
       </div>
     </div>
   </div>
