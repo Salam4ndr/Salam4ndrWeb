@@ -1,4 +1,4 @@
-/* Generali */
+/* === BASE === */
 body {
   font-family: 'Inter', sans-serif;
   background-color: #f9fafb;
@@ -6,8 +6,8 @@ body {
 }
 
 body.dark {
-  background-color: #111827;
-  color: #e5e7eb;
+  background-color: #0f172a;
+  color: #f1f5f9;
 }
 
 a {
@@ -31,127 +31,84 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
-/* Layout */
+/* === LAYOUT WIDTHS === */
 .max-w-6xl, .max-w-5xl, .max-w-4xl {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
-}
+.max-w-6xl { max-width: 72rem; }
+.max-w-5xl { max-width: 64rem; }
+.max-w-4xl { max-width: 56rem; }
 
-.max-w-5xl {
-  max-width: 64rem;
-}
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+.pb-2 { padding-bottom: 0.5rem; }
+.pb-12 { padding-bottom: 3rem; }
+.pb-16 { padding-bottom: 4rem; }
 
-.max-w-4xl {
-  max-width: 56rem;
-}
+.text-center { text-align: center; }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
+.text-sm { font-size: 0.875rem; }
+.text-xl { font-size: 1.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
+.rounded { border-radius: 0.25rem; }
+.rounded-lg { border-radius: 0.5rem; }
 
 .shadow-sm {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-/* Header */
+/* === HEADER === */
 header {
   position: sticky;
   top: 0;
-  background-color: #fff;
   z-index: 10;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid #e5e7eb;
+  backdrop-filter: blur(6px);
 }
 
 .dark header {
-  background-color: #111827;
+  background-color: rgba(17, 24, 39, 0.9);
   border-color: #1f2937;
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
 }
 
-/* Bottone lingua */
+.dark header h1 {
+  color: #f8fafc;
+}
+
+/* === BUTTON === */
 #langBtn {
   padding: 0.25rem 0.75rem;
   font-size: 0.875rem;
   border-radius: 0.375rem;
   border: 1px solid #374151;
   background-color: #f3f4f6;
-  color: #fff;
+  color: #ffffff;
 }
 
 .dark #langBtn {
   background-color: #1f2937;
 }
 
-/* Griglia certificati */
+/* === GRID === */
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -163,9 +120,9 @@ header .container {
   }
 }
 
-/* Card */
+/* === CARD === */
 .cert-card {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -182,7 +139,7 @@ header .container {
   background-color: #1f2937;
 }
 
-/* Colori testo */
+/* === TEXT COLORS === */
 .text-gray-200 { color: #e5e7eb; }
 .text-gray-300 { color: #d1d5db; }
 .text-gray-400 { color: #9ca3af; }
@@ -204,7 +161,7 @@ header .container {
   color: #60a5fa;
 }
 
-/* Bordo sezioni */
+/* === BORDERS === */
 .border-b {
   border-bottom: 1px solid #e5e7eb;
 }
@@ -215,8 +172,4 @@ header .container {
 
 .dark .border-b, .dark .border-t {
   border-color: #1f2937;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
