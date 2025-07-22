@@ -21,6 +21,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+  color: #f3f4f6;
 }
 
 nav .container {
@@ -29,6 +30,7 @@ nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav .title {
@@ -130,20 +132,18 @@ nav .dropdown-menu a:hover {
   min-width: 40%;
   text-align: center;
   font-size: 1rem;
+  border: 1px solid #374151;
+  color: #f3f4f6;
 }
 
 .actions a.primary {
   background-color: #2563eb;
   color: white;
+  border: none;
 }
 
 .actions a.primary:hover {
   background-color: #1d4ed8;
-}
-
-.actions a.secondary {
-  border: 1px solid #4b5563;
-  color: #f3f4f6;
 }
 
 .actions a.secondary:hover {
@@ -220,7 +220,7 @@ section h2 {
 
 /* ======= FOOTER ======= */
 footer {
-  background-color: #1f2937;
+  background-color: #111827;
   padding: 3rem 1.5rem;
   color: #d1d5db;
   margin-top: auto;
@@ -259,6 +259,7 @@ footer .skills span {
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   border-radius: 0.375rem;
+  color: #f3f4f6;
 }
 
 footer .divider {
