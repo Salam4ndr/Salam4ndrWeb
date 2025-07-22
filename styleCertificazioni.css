@@ -1,0 +1,170 @@
+/* === RESET BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+/* === HEADER === */
+header {
+  background-color: #111827;
+  color: #f3f4f6;
+  border-bottom: 1px solid #374151;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+header h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.header-links a {
+  color: #3b82f6;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 0.25rem;
+}
+
+.header-links a:hover {
+  text-decoration: underline;
+  color: #60a5fa;
+}
+
+header button {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  color: #f3f4f6;
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 0.375rem;
+}
+
+/* === HEADINGS & TEXT === */
+h1, h2, h3, h4, h5, h6 {
+  color: #f3f4f6;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+p {
+  color: #d1d5db;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* === GLOBAL LINKS === */
+
+a {
+  color: #3b82f6;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+/* === CERTIFICATION CARDS === */
+.cert-card {
+  background-color: #1f2937;
+  color: #f3f4f6;
+  border-left: 4px solid transparent;
+  transition: all 0.2s ease;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cert-card:hover {
+  border-left-color: #3b82f6;
+  transform: translateX(4px);
+}
+
+.cert-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.cert-card p {
+  font-size: 0.875rem;
+  color: #d1d5db;
+}
+
+.cert-card a {
+  font-size: 0.875rem;
+  color: #3b82f6;
+}
+
+.cert-card a:hover {
+  color: #60a5fa;
+}
+
+.cert-card img {
+  object-fit: cover;
+  height: 10rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* === SECTIONS === */
+section {
+  padding: 2rem 1.5rem;
+}
+
+section h3 {
+  border-bottom: 1px solid #374151;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+/* === GRID LAYOUT === */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #374151;
+  font-size: 0.875rem;
+}
+
+footer a {
+  color: #60a5fa;
+}
+
+footer a:hover {
+  color: #3b82f6;
+}
