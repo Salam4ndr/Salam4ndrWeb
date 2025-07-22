@@ -153,24 +153,30 @@ html.dark .text-gray-400 { color: #9ca3af; }
 html.dark .text-gray-500 { color: #6b7280; }
 html.dark .text-gray-600 { color: #4b5563; }
 
-.text-blue-600 {
-  color: #2563eb;
-}
-
-html.dark .text-blue-400 {
-  color: #60a5fa;
-}
+.text-blue-600 { color: #2563eb; }
+html.dark .text-blue-400 { color: #60a5fa; }
 
 /* === BORDERS === */
-.border-b {
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.border-t {
-  border-top: 1px solid #e5e7eb;
-}
+.border-b { border-bottom: 1px solid #e5e7eb; }
+.border-t { border-top: 1px solid #e5e7eb; }
 
 html.dark .border-b,
 html.dark .border-t {
   border-color: #1f2937;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  color: #6b7280;
+  padding: 2rem 1.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+html.dark footer {
+  background-color: #111827;
+  border-color: #1f2937;
+  color: #9ca3af;
 }
