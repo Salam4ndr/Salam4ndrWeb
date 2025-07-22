@@ -1,4 +1,4 @@
-<!--1.10-->
+<!--1.11-->
 <!DOCTYPE html>
 <html lang="it" class="dark"  style="background-color: #111827;">
 <head>
@@ -32,21 +32,21 @@
         <button onclick="toggleLang()" id="langBtn" class="px-3 py-1 text-sm rounded-md bg-gray-100 dark:bg-gray-700">
           EN
         </button>
-        <div class="relative">
-          <button id="menuButton" onclick="toggleDropdown()" class="px-4 py-2 rounded-md bg-gray-100 dark:bg-gray-700 flex items-center gap-2">
-            <span>Menu</span>
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div id="dropdown-menu" class="hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg border border-gray-200 dark:border-gray-700">
-            <a href="#hero" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-t-md" onclick="hideDropdown()">Home</a>
-            <a href="#lab" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700" onclick="hideDropdown()">Cyber Social</a>
-            <a href="#projects" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700" onclick="hideDropdown()">Progetti</a>
-            <a href="certificazioni.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700" onclick="hideDropdown()">Certificazioni</a>
-            <a href="#contatti" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-b-md" onclick="hideDropdown()">Contatti</a>
+       <div class="dropdown">
+          <button id="menuButton" onclick="toggleDropdown()" class="menu-button">
+              <span>Menu</span>
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="dropdown-menu" class="dropdown-menu">
+              <a href="#hero" onclick="hideDropdown()">Home</a>
+              <a href="#lab" onclick="hideDropdown()">Cyber Social</a>
+              <a href="#projects" onclick="hideDropdown()">Progetti</a>
+              <a href="certificazioni.html" onclick="hideDropdown()">Certificazioni</a>
+              <a href="#contatti" onclick="hideDropdown()">Contatti</a>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   </nav>
