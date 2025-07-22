@@ -15,7 +15,7 @@ html, body {
 
 /* ======= NAVBAR ======= */
 nav {
-  background-color: #1f2937;
+  background-color: #111827 !important;
   border-bottom: 1px solid #374151;
   padding: 1rem;
   position: sticky;
@@ -34,6 +34,7 @@ nav .container {
 nav .title {
   font-size: 1.25rem;
   font-weight: 600;
+  color: #f3f4f6;
 }
 
 nav .menu {
@@ -97,6 +98,7 @@ nav .dropdown-menu a:hover {
   font-weight: bold;
   line-height: 1.4;
   margin-bottom: 1rem;
+  color: #f3f4f6;
 }
 
 .text-gradient {
@@ -107,7 +109,7 @@ nav .dropdown-menu a:hover {
 }
 
 .hero-text p {
-  color: #9ca3af;
+  color: #d1d5db;
   margin-bottom: 2rem;
   font-size: 1.125rem;
   max-width: 36rem;
@@ -116,6 +118,7 @@ nav .dropdown-menu a:hover {
 .actions {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .actions a {
@@ -123,6 +126,10 @@ nav .dropdown-menu a:hover {
   padding: 0.75rem 1.5rem;
   border-radius: 0.375rem;
   transition: background 0.2s ease;
+  flex: 1 1 auto;
+  min-width: 40%;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .actions a.primary {
@@ -162,6 +169,7 @@ section h2 {
   font-weight: 700;
   text-align: center;
   margin-bottom: 2rem;
+  color: #f3f4f6;
 }
 
 .grid-2 {
@@ -189,6 +197,7 @@ section h2 {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #f3f4f6;
 }
 
 .card p {
@@ -226,6 +235,7 @@ footer h3 {
   font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #f3f4f6;
 }
 
 footer p,
@@ -257,6 +267,7 @@ footer .divider {
   padding-top: 2rem;
   text-align: center;
   font-size: 0.875rem;
+  color: #9ca3af;
 }
 
 /* ======= RESPONSIVE ======= */
@@ -267,8 +278,9 @@ footer .divider {
   }
 
   .actions {
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   .hero-text h1 {
